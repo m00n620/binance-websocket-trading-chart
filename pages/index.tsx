@@ -78,7 +78,7 @@ const Home: NextPage = observer(() => {
                 <p>{numeral(tradeStore.ticker.lowPrice).format("0,0.00")}</p>
               </div>
               <div className="mr-4">
-                <p>24h Volume</p>
+                <p>Total Volume</p>
                 <p>{numeral(tradeStore.ticker.totalTradedQuoteAssetVolume).format("0,0.00")} USD</p>
               </div>
             </div>
