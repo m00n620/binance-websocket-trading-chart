@@ -63,7 +63,7 @@ const Home: NextPage = observer(() => {
           {tradeStore.ticker && (
             <div className="flex text-sm font-semibold border border-gray-600 px-4 py-2 rounded-md">
               <div className="mr-4">
-                <p className="text-slate-500">24h Change</p>
+                <p>24h Change</p>
                 <p className={tradeStore.ticker.priceChange >= 0 ? "text-green-600" : "text-red-600"}>
                   {numeral(tradeStore.ticker.priceChange).format("0,0.00")}{" "}
                   {numeral(tradeStore.ticker.priceChangePercent).format("0,0.00")}%
